@@ -961,6 +961,36 @@
     return-void
 .end method
 
+.method private addModDeveloperInfo()V
+    .locals 3
+
+    new-instance v0, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;
+
+    invoke-direct {v0}, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;-><init>()V
+
+    const-string v1, "Modification\ndeveloper"
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;->setTitle(Ljava/lang/String;)V
+
+    const-string v1, "@juniiim"
+
+    invoke-virtual {v0, v1}, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;->setSummary(Ljava/lang/String;)V
+
+    const v2, 0x7f080447
+
+    invoke-virtual {v0, v2}, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;->setResIcon(I)V
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v2}, Lcom/oneplus/settings/aboutphone/SoftwareInfoEntity;->setIntent(Ljava/lang/String;)V
+
+    iget-object v2, p0, mList:Ljava/util/List;
+
+    invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
 .method private addOneplusSystemVersion()V
     .locals 7
 
@@ -1639,7 +1669,7 @@
 
     if-eqz v1, :cond_4
 
-    const-string v0, "Snapdragon\u2122 855"
+    const-string v0, "Snapdragon\u2122 660"
 
     goto :goto_0
 
@@ -1841,6 +1871,8 @@
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
+
+    const-string v0, "6.4\" IPS LCD Display"
 
     goto :goto_3
 
@@ -2407,6 +2439,8 @@
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     invoke-direct {p0}, addDeviceName()V
+
+    invoke-direct {p0}, addModDeveloperInfo()V
 
     iget-object v0, p0, mActivity:Landroid/app/Activity;
 
