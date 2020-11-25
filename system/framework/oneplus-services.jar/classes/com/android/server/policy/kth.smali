@@ -72,6 +72,8 @@
 
 .field private static final hL:I = 0x3e8
 
+.field private static strNode:Ljava/lang/String;
+
 
 # instance fields
 .field private AK:Z
@@ -209,6 +211,10 @@
     move-result-object v0
 
     sput-object v0, VIBRATION_ATTRIBUTES:Landroid/media/AudioAttributes;
+
+    const-string v0, "/proc/tp_gesture"
+
+    sput-object v0, strNode:Ljava/lang/String;
 
     return-void
 .end method
@@ -483,6 +489,21 @@
 
     iput-object p1, p0, mTelecomManager:Landroid/telecom/TelecomManager;
 
+    const-string v0, "/sys/touchpanel/double_tap"
+
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    sput-object v0, strNode:Ljava/lang/String;
+
+    :cond_1
     return-void
 .end method
 
@@ -1396,20 +1417,43 @@
 
     const-string v5, "/proc/touchpanel/gesture_enable"
 
+    new-instance v6, Ljava/io/File;
+
+    invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_a
+
     invoke-static {v5, v3}, Lcom/android/server/policy/bio;->zta(Ljava/lang/String;[B)Z
 
+    :cond_a
     const-string v3, "oem_acc_anti_misoperation_screen"
 
     invoke-static {v0, v3, v2, v1}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v0
 
-    if-ne v0, v4, :cond_a
+    if-ne v0, v4, :cond_b
 
     move v2, v4
 
-    :cond_a
+    :cond_b
     iput-boolean v2, p0, zK:Z
+
+    iget v0, p0, iK:I
+
+    shr-int/lit8 v0, v0, 0x7
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    sget-object v0, strNode:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/android/server/policy/bio;->bio(Ljava/lang/String;Ljava/lang/String;)Z
 
     return-void
 .end method
