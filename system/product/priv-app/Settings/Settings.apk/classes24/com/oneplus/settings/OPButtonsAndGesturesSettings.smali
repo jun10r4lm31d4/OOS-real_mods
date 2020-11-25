@@ -238,7 +238,7 @@
 
     iget-object v4, p0, mCameraDoubleTapPowerGesturePreference:Landroidx/preference/SwitchPreference;
 
-    const v5, 0x7f120cfd
+    const v5, 0x7f120cfe
 
     invoke-virtual {v4, v5}, Landroidx/preference/SwitchPreference;->setSummary(I)V
 
@@ -251,7 +251,7 @@
 
     iget-object v4, p0, mCameraDoubleTapPowerGesturePreference:Landroidx/preference/SwitchPreference;
 
-    const v5, 0x7f1203e5
+    const v5, 0x7f1203e6
 
     invoke-virtual {v4, v5}, Landroidx/preference/SwitchPreference;->setSummary(I)V
 
@@ -523,7 +523,7 @@
 
     if-eqz v0, :cond_3
 
-    const v2, 0x7f120110
+    const v2, 0x7f120111
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setTitle(I)V
 

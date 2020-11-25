@@ -128,7 +128,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120747
+    const v2, 0x7f120748
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -164,7 +164,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120f16
+    const v2, 0x7f120f17
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
 
     iget-object v4, p0, mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f120e1d
+    const v5, 0x7f120e1e
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -194,9 +194,9 @@
 
     move-result v3
 
-    const v4, 0x7f120c36
+    const v4, 0x7f120c37
 
-    const v5, 0x7f121294
+    const v5, 0x7f121297
 
     if-nez v3, :cond_a
 
@@ -237,7 +237,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e1e
+    const v7, 0x7f120e1f
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -281,7 +281,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e83
+    const v7, 0x7f120e84
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -297,7 +297,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e12
+    const v7, 0x7f120e13
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -313,7 +313,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e18
+    const v7, 0x7f120e19
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -329,55 +329,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e8a
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e85
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e88
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e8c
+    const v7, 0x7f120e8b
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -403,6 +355,54 @@
 
     move-result v3
 
+    if-nez v3, :cond_6
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
+    const v7, 0x7f120e89
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_6
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
+    const v7, 0x7f120e8d
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_6
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
+    const v7, 0x7f120e87
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
     if-eqz v3, :cond_3
 
     invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isO2()Z
@@ -416,55 +416,7 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
-    const v7, 0x7f120e8e
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e1a
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e15
-
-    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    iget-object v6, p0, mActivity:Landroid/app/Activity;
-
-    const v7, 0x7f120e14
+    const v7, 0x7f120e8f
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -496,7 +448,55 @@
 
     iget-object v6, p0, mActivity:Landroid/app/Activity;
 
+    const v7, 0x7f120e16
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
+    const v7, 0x7f120e15
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
     const v7, 0x7f120e1c
+
+    invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iget-object v6, p0, mActivity:Landroid/app/Activity;
+
+    const v7, 0x7f120e1d
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -647,7 +647,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120d5a
+    const v2, 0x7f120d5b
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -663,7 +663,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120e81
+    const v2, 0x7f120e82
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -676,7 +676,7 @@
     :cond_0
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120dab
+    const v2, 0x7f120dac
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -709,7 +709,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120a9b
+    const v2, 0x7f120a9c
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -809,7 +809,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120acb
+    const v2, 0x7f120acc
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -855,7 +855,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f12107c
+    const v2, 0x7f12107e
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -873,7 +873,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1205de
+    const v2, 0x7f1205df
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -928,7 +928,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120923
+    const v2, 0x7f120924
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -938,7 +938,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120de5
+    const v2, 0x7f120de6
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1010,7 +1010,7 @@
 
     move-result v1
 
-    const v2, 0x7f1205de
+    const v2, 0x7f1205df
 
     if-eqz v1, :cond_0
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120ea8
+    const v4, 0x7f120ea9
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1063,7 +1063,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f120dc3
+    const v4, 0x7f120dc4
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1124,7 +1124,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120ec2
+    const v2, 0x7f120ec3
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1134,7 +1134,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120ec4
+    const v2, 0x7f120ec5
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1166,7 +1166,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f12107d
+    const v2, 0x7f12107f    # 1.9415294E38f
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1200,7 +1200,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1205de
+    const v3, 0x7f1205df
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1237,7 +1237,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f1205e3
+    const v2, 0x7f1205e4
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1247,7 +1247,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120fd0
+    const v2, 0x7f120fd2
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1279,7 +1279,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f1203c5
+    const v2, 0x7f1203c6
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1309,7 +1309,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1205de
+    const v3, 0x7f1205df
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1492,7 +1492,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be4
+    const v2, 0x7f120be5
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1509,7 +1509,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be3
+    const v2, 0x7f120be4
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1526,7 +1526,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120bd0
+    const v2, 0x7f120bd1
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1543,7 +1543,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be9
+    const v2, 0x7f120bea
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1566,7 +1566,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120db7
+    const v2, 0x7f120db8
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1589,7 +1589,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be0
+    const v2, 0x7f120be1
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1688,7 +1688,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120db8
+    const v2, 0x7f120db9
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1711,7 +1711,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be1
+    const v2, 0x7f120be2
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1762,7 +1762,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be6
+    const v2, 0x7f120be7
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1831,7 +1831,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120bea
+    const v2, 0x7f120beb
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1854,7 +1854,7 @@
 
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120db9
+    const v2, 0x7f120dba
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1866,7 +1866,7 @@
     :goto_0
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be8
+    const v2, 0x7f120be9
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1880,7 +1880,7 @@
     :goto_1
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be5
+    const v2, 0x7f120be6
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1892,7 +1892,7 @@
     :goto_2
     iget-object v1, p0, mActivity:Landroid/app/Activity;
 
-    const v2, 0x7f120be7
+    const v2, 0x7f120be8
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -2111,7 +2111,7 @@
 
     sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v2, 0x7f120e1b
+    const v2, 0x7f120e1c
 
     invoke-virtual {v1, v2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -2127,7 +2127,23 @@
 
     sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v2, 0x7f120e16
+    const v2, 0x7f120e17
+
+    invoke-virtual {v1, v2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    const v2, 0x7f120e1a
 
     invoke-virtual {v1, v2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -2159,23 +2175,7 @@
 
     sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v2, 0x7f120e18
-
-    invoke-virtual {v1, v2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
-
-    sget-object v1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    const v2, 0x7f120e1a
+    const v2, 0x7f120e1b
 
     invoke-virtual {v1, v2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -2579,7 +2579,7 @@
     :cond_0
     iget-object v0, p0, mView:Lcom/oneplus/settings/aboutphone/Contract$View;
 
-    const v1, 0x7f12140e
+    const v1, 0x7f121411
 
     invoke-interface {v0, v1}, Lcom/oneplus/settings/aboutphone/Contract$View;->showLongToast(I)V
 
@@ -2796,7 +2796,7 @@
 
     iget-object v4, p0, mActivity:Landroid/app/Activity;
 
-    const v5, 0x7f121693
+    const v5, 0x7f121696
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -2870,7 +2870,7 @@
 
     iget-object v2, p0, mView:Lcom/oneplus/settings/aboutphone/Contract$View;
 
-    const v3, 0x7f12140d
+    const v3, 0x7f121410
 
     invoke-interface {v2, v3}, Lcom/oneplus/settings/aboutphone/Contract$View;->showLongToast(I)V
 
