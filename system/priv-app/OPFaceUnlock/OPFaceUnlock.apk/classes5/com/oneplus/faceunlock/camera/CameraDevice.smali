@@ -1534,6 +1534,8 @@
 
     const/4 v0, 0x0
 
+    return v0
+
     sget-object v2, TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;

@@ -357,6 +357,10 @@
 .method public static useTEE()Z
     .locals 3
 
+    const/4 v0, 0x1
+
+    return v0
+
     sget-object v0, m_ConfigPreferences:Landroid/content/SharedPreferences;
 
     const-string v1, "UseTEE"
