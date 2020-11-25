@@ -52,7 +52,7 @@
 
     iput-boolean p1, p0, mFinished:Z
 
-    const p1, 0x1fa2652
+    const p1, 0x1fa265c
 
     iput p1, p0, mSensorType:I
 
@@ -217,7 +217,9 @@
 
     iget v1, p0, mSensorType:I
 
-    invoke-virtual {v0, v1}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/hardware/SensorManager;->getDefaultSensor(IZ)Landroid/hardware/Sensor;
 
     move-result-object v4
 
