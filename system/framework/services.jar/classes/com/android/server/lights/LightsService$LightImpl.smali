@@ -789,7 +789,9 @@
 
     if-nez v0, :cond_3
 
-    move v1, p1
+    shl-int/lit8 v1, p1, 0x2
+
+    or-int/lit8 v1, v1, 0x3
 
     const/4 v2, 0x0
 
