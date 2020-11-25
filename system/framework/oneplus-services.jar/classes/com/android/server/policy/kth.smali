@@ -503,6 +503,7 @@
 
     sput-object v0, strNode:Ljava/lang/String;
 
+    :cond_1
     return-void
 .end method
 
