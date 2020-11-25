@@ -294,7 +294,7 @@
 .end method
 
 .method screenState(Lcom/android/systemui/statusbar/phone/DozeParameters;)I
-    .locals 1
+    .locals 2
 
     sget-object v0, Lcom/android/systemui/doze/DozeMachine$1;->$SwitchMap$com$android$systemui$doze$DozeMachine$State:[I
 
@@ -304,7 +304,9 @@
 
     aget p0, v0, p0
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
+
+    const/4 v1, 0x1
 
     packed-switch p0, :pswitch_data_0
 
@@ -313,9 +315,7 @@
     return p0
 
     :pswitch_0
-    const/4 p0, 0x3
-
-    return p0
+    return v0
 
     :pswitch_1
     invoke-virtual {p1}, Lcom/android/systemui/statusbar/phone/DozeParameters;->shouldControlScreenOff()Z
@@ -324,9 +324,12 @@
 
     if-eqz p0, :cond_0
 
-    const/4 v0, 0x2
+    goto :goto_0
 
     :cond_0
+    move v0, v1
+
+    :goto_0
     return v0
 
     :pswitch_2
@@ -335,9 +338,7 @@
     return p0
 
     :pswitch_3
-    return v0
-
-    nop
+    return v1
 
     :pswitch_data_0
     .packed-switch 0x1
