@@ -803,6 +803,34 @@
     invoke-virtual {v0, v1}, Landroidx/preference/PreferenceCategory;->removePreference(Landroidx/preference/Preference;)Z
 
     :cond_0
+    const-string v0, "draw_o_start_camera_key"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "music_control_key"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "oneplus_draw_m_start_app"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "oneplus_draw_o_start_app"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "oneplus_draw_s_start_app"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "oneplus_draw_v_start_app"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "oneplus_draw_w_start_app"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
     return-void
 .end method
 

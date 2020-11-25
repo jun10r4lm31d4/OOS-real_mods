@@ -562,6 +562,14 @@
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setVisible(Z)V
 
     :goto_2
+    const-string v0, "op_alertslider_settings_soc_tri_state"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
+    const-string v0, "op_fingerprint_long_press_camera_shot"
+
+    invoke-virtual {p0, v0}, removePreference(Ljava/lang/String;)Z
+
     return-void
 .end method
 
